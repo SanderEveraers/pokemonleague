@@ -18,7 +18,8 @@ class EventsController extends AppController
 
     public function index()
     {
-        $this->set('events', $this->Events->find('all'));
+        $events = $this->Events->find('all');
+        $this->set(compact('events'));
     }
 
     public function pastEvents()
@@ -41,7 +42,7 @@ class EventsController extends AppController
     {
         $this->set('ongoingEvents', $this->Events->find('all', [
             'conditions' => ['Events.startdate =<' => new DateTime(), 
-                'Events.enddate >=' => new DateTime()]],
+                'Events.enddate >=' => new DateTime()],
             'contain' => ['id','eventname']
             ]));
     }
