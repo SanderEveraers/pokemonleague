@@ -22,7 +22,8 @@
             <li><a href="#">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav">
-            <li><a href="#">Login</a></li>
+            <?php $cell = $this->cell('User::navbar'); ?>
+                    <?= $cell ?>
         </ul>
     </div>
 </div>
