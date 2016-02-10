@@ -22,7 +22,7 @@
             <li><a href="#">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav">
-            <?php $cell = $this->cell('User::navbar'); ?>
+            <?php $cell = $this->cell('User::navbar', [$user]); ?>
                     <?= $cell ?>
         </ul>
     </div>

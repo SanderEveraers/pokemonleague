@@ -57,7 +57,9 @@ class UsersController extends AppController
 
     public function login()
     {
-        if ($this->request->is('post')) {
+        if(!is_null($this->Auth->user('id')))
+            $this->Flash->error(__('Already logged in'));
+        else if ($this->request->is('post')) {
             $user = $this->Auth->identify();
             if ($user) {
                 $this->Auth->setUser($user);
@@ -72,4 +74,16 @@ class UsersController extends AppController
         return $this->redirect($this->Auth->logout());
     }
 
+    static public function _isAuthorized($user, $request)
+    {
+        $action = ($request instanceof Cake\Network\Request) ? $request -> action : $request['action'];
+
+        if($action == 'add' && $user['role'] == 'CanAddPosts')
+            return true;
+
+        return parent::_isAuthorized($user, $request);
+    }
+
 }
+
+?>

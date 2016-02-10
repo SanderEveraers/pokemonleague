@@ -3,6 +3,8 @@ namespace App\View\Cell;
 
 use Cake\View\Cell;
 use Tools\Auth\AuthUserTrait;
+use App\Controller\AppController; // Don't forget to use namespace of your Controller
+use App\Controller\UsersController; // Don't forget to use namespace of your Controller
 
 /**
  * User cell
@@ -27,8 +29,8 @@ class UserCell extends Cell
     {
     }
 
-    public function navbar()
+    public function navbar($user)
     {
-        $this->set(['userData' => $userData]);
+        $this -> set ('user', $user);
     }
 }

@@ -28,6 +28,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <!-- load css and javascripts -->
     <?= $this->Html->meta('icon') ?>
 
+
     <?= $this->Html->css('bootstrap.css') ?>
     <?= $this->Html->css('bootstrap-theme.css') ?>
     <?= $this->Html->css('pokemon.css') ?>
@@ -45,11 +46,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 <body>
 <!-- load navbar -->
     <?= $this->element('navbar') ?>
-    <?= $this->Flash->render() ?>
 
 <!-- fetch content -->
     <section class="container clearfix">
     <div class="content">
+        <?= $this->Flash->render() ?>
         <?= $this->fetch('content') ?>
     </div>
     </section>
