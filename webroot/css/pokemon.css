@@ -9,7 +9,7 @@
 body {
     background-image: url("../img/background_stadium.jpg");
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: center top;
     background-attachment: fixed;
     margin-top: 110px;
 }

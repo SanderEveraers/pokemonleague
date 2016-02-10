@@ -1,5 +1,7 @@
-<div class="event form">
-<?= $this->Form->edit($$event) ?>
+<!-- src/Template/Users/register.ctp -->
+
+<div class="users form">
+<?= $this->Form->create($user) ?>
     <fieldset>
     <div class="row">
         <div class="col-md-4">
