@@ -1,4 +1,5 @@
 <!-- File: src/Template/Events/index.ctp -->
+<?php $this->assign('title', 'Event Index'); ?>
 
 <h1>Events</h1>
 <table class="table table-striped table-hover">
@@ -23,11 +24,9 @@
             <?= $event->enddate ?>
         </td>
         <td>
-            <!-- Indicates caution should be taken with this action -->
-            <button type="button" class="btn btn-warning btn-sm">
-                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-                Edit
-            </button>
+            <?= $this->Html->link(
+                $this->Html->tag('span','',['class' => 'glyphicon glyphicon-pencil']).
+                    ' Edit',['action' => 'edit', $event->id],['class' => 'btn btn-warning btn-sm', 'role' => 'button' , 'escape' => false]);?>
 
 
             <?= $this->Html->link(
