@@ -16,6 +16,7 @@
     <?= $this->Html->css('bootstrap.css') ?>
     <?= $this->Html->css('bootstrap-theme.css') ?>
     <?= $this->Html->css('pokemon.css') ?>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 
     <?= $this->Html->script('jquery-2.2.0.min.js') ?>
     <?= $this->Html->script('bootstrap.js') ?>
