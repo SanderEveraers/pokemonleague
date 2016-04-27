@@ -40,6 +40,8 @@ class AppController extends Controller
     public function initialize()
     {
         parent::initialize();
+         // Set the layout.
+        $this->viewBuilder()->layout('pokemon');
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');

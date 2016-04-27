@@ -84,6 +84,11 @@ class UsersController extends AppController
         return parent::_isAuthorized($user, $request);
     }
 
+    public function dashboard()
+    {
+        $this->set('users', $this->Users->find('all'));
+    }
+
 }
 
 ?>

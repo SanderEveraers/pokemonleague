@@ -33,4 +33,10 @@ class UserCell extends Cell
     {
         $this -> set ('user', $user);
     }
+
+    public function edit_event($user, $event)
+    {
+        $this -> set ('user', $user);
+        $this -> set ('event', $event);
+    }
 }

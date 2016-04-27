@@ -1,0 +1,6 @@
+TODO:
+A lot
+
+
+Ideeën:
+View Cell maken voor pokémon -> Naam, afbeelding, stats & moves
