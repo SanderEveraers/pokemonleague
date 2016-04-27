@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col-md-6">
 		<p>
-		Welkom op onze website! Er wordt momenteel nog aan gewerkt, maar neem gerust een kijkje!
+		Welkom bij Pokémon League Nederland. Wij zijn een organisatie van enthousiastelingen die voornamelijk het spel ‘Pok&eacute;mon’ tot leven brengen. Dit doen wij via een unieke ervaring waarin we de digitale spel wereld koppelen aan onze leef omgeving. Door het jaar heen zijn wij te vinden bij verschillende conventies verspreid over Nederland.
 		</p>
 	</div>
 

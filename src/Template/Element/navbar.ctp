@@ -22,10 +22,11 @@
                 <li><a href="#">HALL OF FAME</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
+            <!-- Login/logout button
             <ul class="nav navbar-nav">
                 <?php $cell = $this->cell('User::navbar', [$user]); ?>
                         <?= $cell ?>
-            </ul>
+            </ul> -->
         </div>
     </div>
 </div>
