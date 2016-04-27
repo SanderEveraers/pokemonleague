@@ -65,4 +65,10 @@ class EventsCell extends Cell
                     'coming_events' => $coming_events,
                     'past_events' => $past_events]);
     }
+
+    public function edit_event($user, $event)
+    {
+        $this -> set ('user', $user);
+        $this -> set ('event', $event);
+    }
 }
