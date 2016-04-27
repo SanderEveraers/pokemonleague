@@ -5,7 +5,7 @@
 
 <h1><?= $event->eventname ?></h1>
 
-<?= $this->Html->link('view english version', ['controller' => 'events', 'action' => 'viewenglish', $event['id']]) ?>
+<!-- <?= $this->Html->link('view english version', ['controller' => 'events', 'action' => 'viewenglish', $event['id']]) ?> -->
 <h2>Locatie</h2>
 <?= $event->location ?>
 <h2>Het event</h2>
